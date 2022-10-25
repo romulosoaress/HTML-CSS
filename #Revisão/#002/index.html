@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="IMAGENS/Home.ico.ico" type="image/x-icon">
+    <title>Revision</title>
+       
+</head>
+<body style="background-color:rgb(255, 193, 193);">
+    <h1 style="text-align:center; color:blue;">Revisão geral antes do fim do módulo 01</h1>
+    <ul>
+        <li><a href="#emoji">Símbolos e Emoji</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#negrito">Negrito e itálico</a> </li>
+        <li><a href="#citações">Citações</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#link">Links âncoras</a></li>
+        <li><a href="#imagem">Imagens dinâmicas</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="PAGINA 03/página03.html" target="_blank" target="_self">Desafio Final Módulo 01</a></li>
+
+    </ul>
+    <p>O <abbr title="Hyper Text Markup Language">HTML</abbr> tem mudado minha vida.</p>
+    <h2 id="emoji">Símbolos e Emoji</h2>
+    <p>Para colocar um símbolo você precisa colocar #.<br></p>
+    <p><code style="color:red;">sub</code> é usado dessa forma = H<sub>2</sub>O.</p>
+    <p><code style="color:rgb(17, 0, 255);">sup</code> é usado dessa forma = x<sup>20</sup>+3.</p>
+
+    <p>Para colocar emojis, colocar o <code>&#x</code>, antes da numeração do emoji.&#x1f525</p>
+
+
+    <h2 id="imagens">Imagens</h2>
+    <p>Basta apenas colocar a tag <strong>img</strong> e definir o src depois e o texto alternativo.</p>
+    <img width="100 px" height="100 px" src="IMAGENS/IMG_0965.jpg" alt="Foto braba de mim mesmo" >
+    
+    <h2 id="negrito">Negrito e Italíco</h2>
+    <p>Para dar enfâse a uma palavra ou texto, usamos a tag <strong>strong</strong>.</p>
+    <pre>
+        E para destacar uma palavra ou frase
+        Usamos a tag em, <em>italíco</em>.
+    </pre>
+    <p>Também temos a tag ins que dá esse sentido a <ins>palavra</ins>.</p>
+
+    <h2 id="citações"><mark>Citações</mark></h2>
+    <p>Usando a tag <code style="color:red;">abbr</code> fazemos citações de abreviação.<br>
+        O <abbr title="Hyper Text Markup Language">HTML</abbr> tem mudado minha vida.</p>
+    <p>Usando a tag <code style="color:red;">q</code> fazemos citações curtas.<br>
+        Como dizia o meu amigo André: <q>Bora trabalhar gente</q> tem mudado minha vida.</p>
+    
+        <pre>
+            <address>
+                Rua Alberto Otto
+                Curitiba, Paraná
+                Bloco 21 Ap 404
+            </address>
+        </pre>
+
+    <h2 id="listas">Listas</h2>
+    <p>Tem dois formatos de listas, Listas Ordenadas e Listas não Ordenadas.</p>
+    <pre>
+        ol = São listas Ordenadas
+        ul = São listas não ordenadas
+        <!-- Depois de escolher qual elemento usar para criar uma lista, coloque como atributo "li" para escrever cada linha da lista-->
+    </pre>
+
+    <h2 id="link">Links Âncoras</h2>
+    <p><a href="https://www.youtube.com/" rel="external" target="_blank">YouTube</a> Click no youtube para acessar o conteúdo.</p>
+   
+    <h2 id="imagem">Imagens Dinâmicas</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="IMAGENS/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="IMAGENS/foto-m.png" type="image/png">
+        <img src="IMAGENS/foto-g.png" alt="Imagem grande">       
+    </picture>
+   <h2 id="video">Videos</h2>
+   <h3>Vídeos internos</h3>
+   <video src="MIDIA/Dia Mundial da Gentileza 202[1].mp4" type="video/mp4" width="560px" controls></video>
+
+   <h3>Videos externos</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <p>Adcionando um áudio</p>
+   <audio src="MIDIA/When You're Not Looking - Nathan Moore.mp3" autoplay controls></audio>
+
+   <audio controls autoplay>
+    <source src="MIDIA/When You're Not Looking - Nathan Moore.ogg" type="audio/ogg">
+    <source src="MIDIA/When You're Not Looking - Nathan Moore.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>

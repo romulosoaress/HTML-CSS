@@ -1,0 +1,18 @@
+Lógica de Programação revisão 02:
+01- Criar Pasta da Revisão
+02- Criar pasta de imagens
+03- Criar pasta de midia
+04- Criar pasta de página 01 e página 02
+05- Escolher as imagens e emoticon
+06- Salvar na pasta de imagens
+07- Achar um vídeo no Youtube
+08- Achar um som no Youtube
+09- Salvar na pasta de midia
+10- Abrir a pasta no VSCode
+11- Criar doc index.html
+12- Colocar tag base "!"
+13- Alterar a linguagen e o Título
+14- Colocar o Título como Revisão
+15- Adcionar um Faviticon
+16- Criar um seletor para mark
+ 

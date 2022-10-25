@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: rgb(40, 56, 70);
+            border: 1px solid black;
+            width: 150px;
+            height: 150px; 
+            text-align: center;  
+            border-radius: 15px;   
+        }
+/*pseudo class é o estado da class*/
+        div:hover { /*hover = passando o mouse*/
+                background-color: rgba(52, 52, 167, 0.692);
+                
+        }
+
+        #d2:hover {
+            background-color: rgb(27, 27, 160);
+        }
+
+        div > p {
+                display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        1
+        <p>rgba(52, 52, 167, 0.692)</p>
+    </div>
+    <div id="d2">2
+        <p>rgb(27, 27, 160)</p>
+    </div>
+    <div id="d3">3</div>
+    <br>
+    <button><a href="hover.html">Pseudo</a> </button>
+    
+</body>
+</html>

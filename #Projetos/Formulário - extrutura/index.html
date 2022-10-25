@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="Designcontest-Vintage-Pen.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(70, 130, 180),rgb(25, 25, 112));
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(25, 25, 112, 0.6);
+            padding: 15px;
+            border-radius: 3%;
+            width: 25%;
+        }
+        fieldset{
+            border: 3px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(54, 54, 54, 0.6);
+            border-radius: 8px;            
+        }
+        .inputbox{
+            position: relative;
+        }
+        .inputuser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputuser:focus ~ .labelInput, .inputuser:valid ~ .labelInput{
+            top: -15px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+
+        #data_comeco{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        #submit{
+            background-image: linear-gradient(to right, rgb(70, 130, 180),rgb(25, 25, 112));
+            border: none;
+            padding: 15px;
+            width: 100%;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        #submit:hover{
+           background-image: linear-gradient(to right, rgb(87, 123, 153),rgb(14, 14, 73));
+        }
+    </style>
+</head>
+<body id="corpo">
+    <div class="box">
+        <form action="https://formspree.io/f/xwkzkgkp" method="post">
+            <fieldset>
+                <legend><strong>Formulário</strong></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="labelInput">Nome</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="profissao" id="profissao" class="inputuser" required>
+                    <label for="profissao" class="labelInput">Qual é a sua profissão?</label>
+                </div>
+                <br>
+
+                <label for="senioridade" id="box_select">Qual é o seu nível?</label>
+                    <select name="nivel" id="box_select" style="background-color: rgba(24, 24, 51, 0.6); color: rgb(242, 243, 245); padding: 4px; border: 2px; width: 48%; border-radius: 5px; text-align: center;">
+                        <option selected disabled value="">Nível</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                    
+                <br><br>
+
+                <label for="data_comeco">Quando começou?</label>
+                <input type="date" name="data_comeco" id="data_comeco" style="background-color: rgba(24, 24, 51, 0.6); color: rgb(242, 243, 245); padding: 4px; width: 46%; border-radius: 5px; text-align: center;" required>                  
+                <br>
+                <hr color="dodgerblue">
+                <br>
+
+                <div class="inputbox">                    
+                    <input type="text" name="pergunta_01" id="pergunta01" class="inputuser" required>
+                    <label for="pergunta01" class="labelInput">O que você mudaria nas Tags?</label>
+                </div>
+                <br>                 
+                <div class="inputbox">                    
+                    <input type="text" name="pegunta_02" id="pegunta02" class="inputuser" required>
+                    <label for="pegunta02" class="labelInput">O que você mudaria nas CSS?</label>
+                </div> 
+                <br>
+                <div class="inputbox">                    
+                    <input type="text" name="pergunta_03" id="pergunta_03" class="inputuser" required>
+                    <label for="pergunta_03" class="labelInput">O que não te agrada nesse projeto?</label>
+                </div> 
+                <br>
+                <div class="inputbox">                    
+                    <input type="text" name="comentario" id="comentario" class="inputuser" required>
+                    <label for="comentario" class="labelInput">Algum dica pra mim?</label>
+                </div>
+
+                <p><strong>No que devo focar?</strong></p>
+                <div class="radio">
+                    <input type="radio" value="html" name="html" id="html" required>
+                    <label for="html">HTML</label>
+                    <br>
+                    <input type="radio" value="css" name="css" id="css" required>
+                    <label for="css">CSS</label>
+                    <br>
+                    <input type="radio" value="javascript" name="javascript" id="javascript" required>
+                    <label for="javascript"> Aprender JavaScript</label>
+                </div>
+                <br>
+
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

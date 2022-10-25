@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="envelope">
+        <!-- header -->
+        <header>
+            <a href="#" class="logo">Rômulo Soares</a>
+            <div class="menu" onclick="menuClassName();"></div>
+        </header>
+        <!-- sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="#">Clients</a> </li>
+                <li><a href="#">Testimonials</a> </li>
+                <li><a href="#">Team</a> </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <img src="bg.jpg" alt="imagem de fundo">
+            <div class="conteudo">   
+                <h2> Sucesso no Design</h2>
+                <p>Evoluir nas áreas que me dão prazer é como passar o tempo fazendo o que ama.</p>
+            </div>
+        </div>
+        <!-- about -->
+        <section class="about">
+            <div class="contentBox">
+                <h2 class="heading">Abo</h2>
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nulla illo accusantium unde beatae laudantium in molestias? Quo dolorem, dolores modi quisquam unde exercitationem earum voluptas eos labore error Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> repudiandae cum, officia magnam voluptas suscipit earum amet, fugit porro esse neque possimus ipsum quos quam accusantium aperiam inventore at cupiditate!</p>
+            </div>
+            <div class="imgBox"></div>
+        </section>
+    </div>
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        function menuClassName(){
+            var sidebar = document.querySelector('.sidebar');
+            var envelope = document.querySelector('.envelope');
+            var menu = document.querySelector('.menu');
+            sidebar.classList.menu('active')
+            envelope.classList.menu('active')
+            menu.classList.menu('active')
+        }
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.menu("sticky", window.scrolly > 0)
+        })
+    </script>
+</body>
+</html>
