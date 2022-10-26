@@ -181,7 +181,7 @@ header .menu.active
     width: 50%;
 }
 
-.about .contentBox .heading
+.heading
 {
     position: relative;
     color: var(--cor-02);
@@ -191,7 +191,7 @@ header .menu.active
     margin-bottom: 10px;
 }
 
-.about .contentBox .text
+.text
 {
     position: relative;
     color: var(--cor-02);
@@ -200,11 +200,85 @@ header .menu.active
     letter-spacing: 1px;
 }
 
-.imgBox
+.about .imgBox
 {
     position: relative;
     width: 50%;
     background-image: url(window.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.sercices
+{
+    position: relative;
+    background: var(--cor-01);
+    text-align: center;
+    padding: 100px;
+    
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.container .serviceBox
+{
+    position: relative;
+    background: var(--cor-02);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.container .serviceBox img
+{
+    max-width: 100px;
+}
+
+.container .serviceBox h2
+{
+    font-weight: 500px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.tecnologia
+{
+    position: relative;
+    background: var(--cor-04);
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tecnologia .contentBox
+{
+    position: relative;
+    max-width: 800px;
+}
+
+.tecnologia .imgBox
+{
+    position: relative;
+    max-width: 250px;
+}
+
+.tecnologia .imgBox img
+{
+    max-width: 100%;
+    filter: invert(1);
 }
