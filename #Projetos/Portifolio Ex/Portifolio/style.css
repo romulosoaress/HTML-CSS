@@ -14,6 +14,7 @@
     --cor-02: #fff;
     --cor-03: #3475ca;
     --cor-04: #3f8ffc;
+    --cor-05: #162c3b;
 }
 
 body 
@@ -281,4 +282,79 @@ header .menu.active
 {
     max-width: 100%;
     filter: invert(1);
+}
+
+.cliente
+{
+    position: relative;
+    padding-top: 100px;
+    background: var(--cor-05);
+    text-align: center;
+}
+
+.cliente .imgBox
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 40px;    
+}
+
+.cliente .imgBox img
+{
+    display: inline-block;
+    position: relative;
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.cliente .imgBox img:hover
+{
+    opacity: 1;
+}
+
+.depoimentos
+{
+    position: relative;
+    padding: 100px;
+    background: var(--cor-01);
+    text-align: center;
+}
+
+.depoimentos .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0px;
+    flex-wrap: wrap;
+}
+
+.depoimentos .container .contentBox
+{
+    position: relative;
+    background: var(--cor-02);
+    padding: 60px 50px;
+    margin: 10px;
+    width: 540px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos .container .contentBox p
+{
+    font-style: italic;
+}
+
+.depoimentos .container .contentBox h3
+{
+    width: 100%;
+    text-align: right;
+    font-weight: 500;
+    color: var(--cor-04);
 }
