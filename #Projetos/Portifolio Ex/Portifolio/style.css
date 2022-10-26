@@ -358,3 +358,146 @@ header .menu.active
     font-weight: 500;
     color: var(--cor-04);
 }
+
+.team
+{
+    position: relative;
+    padding: 0 100px 100px;
+    text-align: center;
+}
+
+.team .container
+{
+    margin-top: 30px;
+}
+
+.team .teamBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.team .teamBox .box
+{
+    margin: 0 10px;
+    width: 260px;
+    padding: 5px;
+    background: var(--cor-02);
+}
+
+.team .teamBox .imgBox
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.team .teamBox .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .teamBox .box .conteudo
+{
+    padding: 15px 0;;
+}
+
+.team .teamBox .box .conteudo h2
+{
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.team .teamBox .box .conteudo h2 span
+{
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contato
+{
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: var(--cor-05);
+}
+
+.about .imgBx2
+{
+    position: relative;
+    width: 50%;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.redBg 
+{
+    background-image: url(red.jpg) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.form
+{
+    position: relative;
+}
+
+.form .inputBox
+{
+    margin-bottom: 40px;
+}
+
+.form .inputBox input
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--cor-02);
+    border-bottom: 2px solid var(--cor-02);
+}
+
+.form .inputBox input::placeholder,
+.form .inputBox textarea::placeholder
+{
+    color: var(--cor-02);
+}
+
+.form .inputBox textarea
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--cor-02);
+    min-width: 150px;
+    max-width: 100%;
+    border-bottom: 2px solid var(--cor-02);
+}
+
+.form .inputBox input[type="submit"]
+{
+    width: 150px;
+    background: var(--cor-02);
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+}
