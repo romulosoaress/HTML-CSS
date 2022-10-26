@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -167,7 +168,7 @@ header .menu.active
     color: var(--cor-04);
 }
 
-.about
+.sobre
 {
     position: relative;
     width: 100%;
@@ -175,7 +176,7 @@ header .menu.active
     display: flex;
 }
 
-.about .contentBox
+.sobre .contentBox
 {
     background: #162c3b;
     padding: 100px;
@@ -201,7 +202,7 @@ header .menu.active
     letter-spacing: 1px;
 }
 
-.about .imgBox
+.sobre .imgBox
 {
     position: relative;
     width: 50%;
@@ -210,7 +211,7 @@ header .menu.active
     background-position: center;
 }
 
-.sercices
+.servicos
 {
     position: relative;
     background: var(--cor-01);
@@ -284,7 +285,7 @@ header .menu.active
     filter: invert(1);
 }
 
-.cliente
+.clientes
 {
     position: relative;
     padding-top: 100px;
@@ -292,7 +293,7 @@ header .menu.active
     text-align: center;
 }
 
-.cliente .imgBox
+.clientes .imgBox
 {
     display: flex;
     justify-content: space-between;
@@ -301,7 +302,7 @@ header .menu.active
     margin-top: 40px;    
 }
 
-.cliente .imgBox img
+.clientes .imgBox img
 {
     display: inline-block;
     position: relative;
@@ -311,7 +312,7 @@ header .menu.active
     cursor: pointer;
 }
 
-.cliente .imgBox img:hover
+.clientes .imgBox img:hover
 {
     opacity: 1;
 }
@@ -359,19 +360,19 @@ header .menu.active
     color: var(--cor-04);
 }
 
-.team
+.time
 {
     position: relative;
     padding: 0 100px 100px;
     text-align: center;
 }
 
-.team .container
+.time .container
 {
     margin-top: 30px;
 }
 
-.team .teamBox
+.time .teamBox
 {
     display: flex;
     flex-wrap: wrap;
@@ -379,7 +380,7 @@ header .menu.active
     justify-content: center;
 }
 
-.team .teamBox .box
+.time .teamBox .box
 {
     margin: 0 10px;
     width: 260px;
@@ -387,14 +388,14 @@ header .menu.active
     background: var(--cor-02);
 }
 
-.team .teamBox .imgBox
+.time .teamBox .imgBox
 {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.team .teamBox .imgBox img
+.time .teamBox .imgBox img
 {
     position: absolute;
     top: 0;
@@ -404,19 +405,19 @@ header .menu.active
     object-fit: cover;
 }
 
-.team .teamBox .box .conteudo
+.time .teamBox .box .conteudo
 {
     padding: 15px 0;;
 }
 
-.team .teamBox .box .conteudo h2
+.time .teamBox .box .conteudo h2
 {
     position: relative;
     font-size: 18px;
     line-height: 1.2em;
 }
 
-.team .teamBox .box .conteudo h2 span
+.time .teamBox .box .conteudo h2 span
 {
     position: relative;
     font-size: 16px;
@@ -431,7 +432,7 @@ header .menu.active
     background: var(--cor-05);
 }
 
-.about .imgBx2
+.sobre .imgBx2
 {
     position: relative;
     width: 50%;
@@ -500,4 +501,39 @@ header .menu.active
     color: #111;
     cursor: pointer;
     font-weight: 400;
+}
+
+.footer
+{
+    position: relative;
+    background: var(--cor-05);
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li
+{
+    list-style: none;
+}
+
+.footer ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer ul li a img
+{
+    max-width: 20px;
+    filter: invert(1);
 }

@@ -17,17 +17,17 @@
         <!-- sidebar -->
         <div class="sidebar">
             <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Services</a> </li>
-                <li><a href="#">Clients</a> </li>
-                <li><a href="#">Depoimentos</a> </li>
-                <li><a href="#">Team</a> </li>
-                <li><a href="#">Contact</a> </li>
+                <li><a href="#inicio">Início</a> </li>
+                <li><a href="#sobre">Sobre</a> </li>
+                <li><a href="#servicos">Serviços</a> </li>
+                <li><a href="#clientes">Clientes</a> </li>
+                <li><a href="#depoimentos">Depoimentos</a> </li>
+                <li><a href="#time">Time</a> </li>
+                <li><a href="#contato">Contato</a> </li>
             </ul>
         </div>
         <!-- banner -->
-        <div class="banner">
+        <div class="banner" id="inicio">
             <img src="bg.jpg" alt="imagem de fundo">
             <div class="conteudo">   
                 <h2> Sucesso no Design</h2>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <!-- about -->
-        <section class="about">
+        <section class="sobre" id="sobre">
             <div class="contentBox">
                 <h2 class="heading">Sobre</h2>
                 <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nulla illo accusantium unde beatae laudantium in molestias? Quo dolorem, dolores modi quisquam unde exercitationem earum voluptas eos labore error Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> repudiandae cum, officia magnam voluptas suscipit earum amet, fugit porro esse neque possimus ipsum quos quam accusantium aperiam inventore at cupiditate!</p>
@@ -44,7 +44,7 @@
         </section>
 
         <!-- Services -->
-        <section class="sercices">
+        <section class="servicos" id="servicos">
             <h2 class="heading">Meu Serviço</h2>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, esse adipisci deleniti soluta vitae impedit, libero sapiente minus perspiciatis voluptas quia modi repellendus! Architecto corporis expedita impedit ipsam inventore nam.</p>
             <div class="container">
@@ -81,7 +81,7 @@
     </section>
 
     <!-- Clientes-->
-    <section class="cliente">
+    <section class="clientes" id="clientes">
         <h2 class="heading">Meus Clientes</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error expedita dicta enim, dolore, quo dolorem dolores commodi illum id quam cumque, nostrum cupiditate velit assumenda ratione incidunt sapiente ex explicabo!</p>
         <div class="imgBox">
@@ -93,7 +93,7 @@
     </section>
 
     <!-- Depoimentos -->
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <h2 class="heading">O que os clientes dizem sobre mim</h2>
         <div class="container">
             <div class="contentBox">
@@ -112,7 +112,7 @@
     </section>
 
     <!-- Team -->
-    <section class="team">
+    <section class="time" id="time">
         <h2 class="heading">Nosso Time</h2>
         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem delectus eaque in aut voluptates doloribus unde, repellendus aliquid reprehenderit, tempore autem eligendi suscipit ratione modi quasi vero incidunt minus.</p>
         <div class="container">
@@ -160,14 +160,14 @@
     </section>
 
     <!-- Contato -->
-    <section class="contato">
+    <section class="contato" id="contato">
         <div>
             <h2 class="heading">Contato</h2>
             <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui corporis magni, delectus perspiciatis vero repudiandae adipisci aliquid optio molestiae odit aspernatur impedit natus excepturi, laboriosam rem quidem, laudantium accusantium atque!</p>
         </div>
     </section>
     
-    <section class="about">
+    <section class="sobre">
         <div class="contentBox redBg">
             <div class="form">
                 <div class="inputBox">
@@ -183,13 +183,25 @@
                     <textarea placeholder="Write your message here..."></textarea>
                 </div>
                 <div class="inputBox">
-                    <input type="submit" value="Send" name="">
+                    <input type="submit" value="Send" name="envio">
                 </div>
             </div>
         </div>
         <div class="imgBx2"></div>
     </section>
 
+    <!-- Footer -->
+    <section class="footer">
+        <p class="text">Design Desenvolvido por Rômulo Soares</p>
+        <ul>
+            <p class="text">Me siga nas redes sociais: </p>
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="linkedin.png"></a></li>
+        </ul>
+
+
+    </section>
 
     </div>
 
@@ -198,7 +210,7 @@
         function menuClassName(){
             var sidebar = document.querySelector('.sidebar');
             var envelope = document.querySelector('.envelope');
-            var menu = document.querySelector('.menu');
+            var menu = document.querySelector('.sobre');
             sidebar.classList.menu('active')
             envelope.classList.menu('active')
             menu.classList.menu('active')
