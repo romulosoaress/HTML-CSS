@@ -538,6 +538,8 @@ header .toggle.active
 	filter: invert(1);
 }
 
+/* Responsividade */
+
 @media (max-width: 991px)
 {
 	header,
