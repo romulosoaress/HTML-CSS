@@ -8,61 +8,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="envelope">
+    <div class="wrapper">
+        
         <!-- header -->
         <header>
             <a href="#" class="logo">Rômulo Soares</a>
-            <div class="menu" onclick="menuClassName();"></div>
+            <div class="toggle" onclick="toggleClassName();"></div>
         </header>
+
         <!-- sidebar -->
         <div class="sidebar">
             <ul>
-                <li><a href="#inicio">Início</a> </li>
-                <li><a href="#sobre">Sobre</a> </li>
-                <li><a href="#servicos">Serviços</a> </li>
-                <li><a href="#clientes">Clientes</a> </li>
-                <li><a href="#depoimentos">Depoimentos</a> </li>
-                <li><a href="#time">Time</a> </li>
-                <li><a href="#contato">Contato</a> </li>
+                <li><a href="#home" onclick="toggleClassName();">Início</a> </li>
+                <li><a href="#about" onclick="toggleClassName();">Sobre</a> </li>
+                <li><a href="#services" onclick="toggleClassName();">Serviços</a> </li>
+                <li><a href="#client" onclick="toggleClassName();">Clientes</a> </li>
+                <li><a href="#testmonials" onclick="toggleClassName();">Depoimentos</a> </li>
+                <li><a href="#team" onclick="toggleClassName();">Time</a> </li>
+                <li><a href="#contact" onclick="toggleClassName();">Contato</a> </li>
             </ul>
         </div>
         <!-- banner -->
-        <div class="banner" id="inicio">
-            <img src="bg.jpg" alt="imagem de fundo">
-            <div class="conteudo">   
+        <div class="banner" id="home">
+            <img src="imagens/bg.jpg" alt="imagem de fundo">
+            <div class="content">   
                 <h2> Sucesso no Design</h2>
                 <p>Evoluir nas áreas que me dão prazer é como passar o tempo fazendo o que ama.</p>
             </div>
         </div>
+
         <!-- about -->
-        <section class="sobre" id="sobre">
-            <div class="contentBox">
+        <section class="about" id="about">
+            <div class="contentBx">
                 <h2 class="heading">Sobre</h2>
                 <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nulla illo accusantium unde beatae laudantium in molestias? Quo dolorem, dolores modi quisquam unde exercitationem earum voluptas eos labore error Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> repudiandae cum, officia magnam voluptas suscipit earum amet, fugit porro esse neque possimus ipsum quos quam accusantium aperiam inventore at cupiditate!</p>
             </div>
-            <div class="imgBox"></div>
+            <div class="imgBx"></div>
         </section>
 
         <!-- Services -->
-        <section class="servicos" id="servicos">
+        <section class="services" id="Services">
             <h2 class="heading">Meu Serviço</h2>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, esse adipisci deleniti soluta vitae impedit, libero sapiente minus perspiciatis voluptas quia modi repellendus! Architecto corporis expedita impedit ipsam inventore nam.</p>
             <div class="container">
-                <div class="serviceBox">
+                <div class="serviceBx">
                     <div>
-                        <img src="icon1.png" alt="Caneta">
+                        <img src="imagens/icon1.png" alt="Caneta">
                         <h2>Design</h2>
                     </div>
                 </div>
-                <div class="serviceBox">
+                <div class="serviceBx">
                     <div>
-                        <img src="icon2.png" alt="Caneta">
+                        <img src="imagens/icon2.png" alt="Caneta">
                         <h2>Development</h2>
                     </div>
                 </div>
-                <div class="serviceBox">
+                <div class="serviceBx">
                     <div>
-                        <img src="icon3.png" alt="Caneta">
+                        <img src="imagens/icon3.png" alt="Caneta">
                         <h2>Branding</h2>
                     </div>
                 </div>
@@ -70,39 +73,39 @@
         </section>   
     
     <!-- Tecnologias -->
-    <section class="tecnologia">
-        <div class="contentBox">
+    <section class="technolgy">
+        <div class="contentBx">
             <h2 class="heading">Todas as Tecnologias que uso</h2>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae numquam pariatur, eius tempora incidunt amet commodi, soluta magni ab ipsam? Tempore nisi ducimus sapiente numquam quaerat cupiditate quod natus.</p>
         </div>
-        <div class="imgBox">
-            <img src="tech.png" alt="Tecnologias">
+        <div class="imgBx">
+            <img src="imagens/tech.png" alt="Tecnologias">
         </div>
     </section>
 
     <!-- Clientes-->
-    <section class="clientes" id="clientes">
+    <section class="client" id="client">
         <h2 class="heading">Meus Clientes</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error expedita dicta enim, dolore, quo dolorem dolores commodi illum id quam cumque, nostrum cupiditate velit assumenda ratione incidunt sapiente ex explicabo!</p>
-        <div class="imgBox">
-            <img src="brand1.png" alt="Logo Google">
-            <img src="brand2.png" alt="Logo Amazon">
-            <img src="brand3.png" alt="Twitter">
-            <img src="brand4.png" alt="Facebook">
+        <div class="imgBx">
+            <img src="imagens/brand1.png" alt="Logo Google">
+            <img src="imagens/brand2.png" alt="Logo Amazon">
+            <img src="imagens/brand3.png" alt="Twitter">
+            <img src="imagens/brand4.png" alt="Facebook">
         </div>
     </section>
 
     <!-- Depoimentos -->
-    <section class="depoimentos" id="depoimentos">
+    <section class="testimonials" id="testimonials">
         <h2 class="heading">O que os clientes dizem sobre mim</h2>
         <div class="container">
-            <div class="contentBox">
+            <div class="contentBx">
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, nihil eum rerum facere officia iure ut sit, omnis fugiat eveniet obcaecati nisi tempore nam! Similique omnis ut reprehenderit sit fugit.</p><br>
                     <h3>Someone Famouse</h3>
                 </div>
             </div>
-            <div class="contentBox">
+            <div class="contentBx">
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, nihil eum rerum facere officia iure ut sit, omnis fugiat eveniet obcaecati nisi tempore nam! Similique omnis ut reprehenderit sit fugit.</p><br>
                     <h3>Someone Famouse</h3>
@@ -112,46 +115,46 @@
     </section>
 
     <!-- Team -->
-    <section class="time" id="time">
+    <section class="team" id="team">
         <h2 class="heading">Nosso Time</h2>
         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem delectus eaque in aut voluptates doloribus unde, repellendus aliquid reprehenderit, tempore autem eligendi suscipit ratione modi quasi vero incidunt minus.</p>
         <div class="container">
-            <div class="teamBox">
+            <div class="teamBx">
                 <div class="box">
-                    <div class="imgBox">
-                        <img src="1.jpg" alt="Mulher">
+                    <div class="imgBx">
+                        <img src="imagens/1.jpg" alt="Mulher">
                     </div>
-                    <div class="conteudo">
+                    <div class="content">
                         <h2>Someone Famous<br><span>CEO & Founder</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="teamBox">
+            <div class="teamBx">
                 <div class="box">
-                    <div class="imgBox">
-                        <img src="2.jpg" alt="Mulher">
+                    <div class="imgBx">
+                        <img src="imagens/2.jpg" alt="Mulher">
                     </div>
-                    <div class="conteudo">
+                    <div class="content">
                         <h2>Someone Famous<br><span>CEO & Founder</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="teamBox">
+            <div class="teamBx">
                 <div class="box">
-                    <div class="imgBox">
-                        <img src="3.jpg" alt="Mulher">
+                    <div class="imgBx">
+                        <img src="imagens/3.jpg" alt="Mulher">
                     </div>
-                    <div class="conteudo">
+                    <div class="content">
                         <h2>Someone Famous<br><span>CEO & Founder</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="teamBox">
+            <div class="teamBx">
                 <div class="box">
-                    <div class="imgBox">
-                        <img src="4.jpg" alt="Mulher">
+                    <div class="imgBx">
+                        <img src="imagens/4.jpg" alt="Mulher">
                     </div>
-                    <div class="conteudo">
+                    <div class="content">
                         <h2>Someone Famous<br><span>CEO & Founder</span></h2>
                     </div>
                 </div>
@@ -160,29 +163,29 @@
     </section>
 
     <!-- Contato -->
-    <section class="contato" id="contato">
+    <section class="contact" id="contact">
         <div>
             <h2 class="heading">Contato</h2>
             <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui corporis magni, delectus perspiciatis vero repudiandae adipisci aliquid optio molestiae odit aspernatur impedit natus excepturi, laboriosam rem quidem, laudantium accusantium atque!</p>
         </div>
     </section>
     
-    <section class="sobre">
-        <div class="contentBox redBg">
+    <section class="about" id="contact">
+        <div class="contentBx redBg">
             <div class="form">
-                <div class="inputBox">
+                <div class="inputBx">
                     <input type="text" name="Nome" placeholder="Nome Completo">
                 </div>
-                <div class="inputBox">
+                <div class="inputBx">
                     <input type="email" name="Email" placeholder="Email Address">
                 </div>
-                <div class="inputBox">
+                <div class="inputBx">
                     <input type="text" name="Numero" placeholder="Número">
                 </div>
-                <div class="inputBox">
+                <div class="inputBx">
                     <textarea placeholder="Write your message here..."></textarea>
                 </div>
-                <div class="inputBox">
+                <div class="inputBx">
                     <input type="submit" value="Send" name="envio">
                 </div>
             </div>
@@ -195,9 +198,9 @@
         <p class="text">Design Desenvolvido por Rômulo Soares</p>
         <ul>
             <p class="text">Me siga nas redes sociais: </p>
-            <li><a href="#"><img src="facebook.png"></a></li>
-            <li><a href="#"><img src="twitter.png"></a></li>
-            <li><a href="#"><img src="linkedin.png"></a></li>
+            <li><a href="#"><img src="imagens/facebook.png"></a></li>
+            <li><a href="#"><img src="imagens/twitter.png"></a></li>
+            <li><a href="#"><img src="imagens/linkedin.png"></a></li>
         </ul>
 
 
@@ -207,18 +210,19 @@
 
     <!-- JavaScript -->
     <script type="text/javascript">
-        function menuClassName(){
+        function toggleClassName(){
             var sidebar = document.querySelector('.sidebar');
-            var envelope = document.querySelector('.envelope');
-            var menu = document.querySelector('.sobre');
-            sidebar.classList.menu('active')
-            envelope.classList.menu('active')
-            menu.classList.menu('active')
+            var wrapper = document.querySelector('.wrapper');
+            var toggle = document.querySelector('.toggle');
+            sidebar.classList.toggle('active')
+            wrapper.classList.toggle('active')
+            toggle.classList.toggle('active')
         }
+
         window.addEventListener('scroll', function(){
-            var header = document.querySelector('header');
-            header.classList.menu("sticky", window.scrolly > 0)
-        })
+			var header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0 )
+		})
     </script>
 </body>
 </html>
