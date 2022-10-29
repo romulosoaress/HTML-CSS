@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     font-family: "Verdana", sans-serif;
     -moz-box-sizing: border-box;
@@ -7,7 +9,6 @@
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
     margin: 0;
-    width: 90%;
 }
 
 html {
@@ -25,14 +26,21 @@ html {
 }
 
 .card {
+    display: flex;
     flex: 0 0 100%;
+    margin: 5px;
     padding: 30px;
     scroll-snap-align: start;
     border-radius: 30px;
+    width: 350px;
+    
 }
 
 .card h1 {
+    position: relative;
     margin-bottom: 2rem;
+    text-align: center;
+    font-sizer: 18px;
 }
 
 .card:nth-child(1) {
